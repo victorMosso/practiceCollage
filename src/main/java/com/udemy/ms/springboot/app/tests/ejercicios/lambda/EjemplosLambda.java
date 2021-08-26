@@ -1,7 +1,9 @@
 package com.udemy.ms.springboot.app.tests.ejercicios.lambda;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.UnaryOperator;
 
 import com.udemy.ms.springboot.app.tests.ejercicios.interfaces.OperadorBinario;
@@ -85,6 +87,8 @@ public class EjemplosLambda {
 		});*/
 //	Usando Lambdas y referencia a metodos
 		lista.sort((s1,s2) -> s1.compareTo(s2));
-		lista.forEach(System.out::println);		
+		lista.forEach(System.out::println);	
+//		lista.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+			
 	}
 }

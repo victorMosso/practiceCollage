@@ -7,27 +7,26 @@ import java.util.Map;
 
 public class Main {
 
-	public void testHashMap() {
-		Map<String, Integer> mapa = new HashMap<>();
-		mapa.put("manzanas", 3);
-		mapa.put("naranjas", 2);
-		
-		int num = mapa.get("manzanas");
-		mapa.put("manzanas", num+4);
-		System.out.println(mapa.get("manzanas"));
+	public void testMap() {
+		Map mapa = new HashMap();
+		mapa.put(null,"valor");
+		mapa.put(null, "v");
+		mapa.put(1, "alan");
+		System.out.println(mapa);
+		System.out.println(mapa.size());
 	}
 	
 	public void testListIndex() {
 		List<Integer> myList = new ArrayList<>();
 		myList.add(10);
-		try {
+//		try {
 		int valorElemento = myList.get(1);
 		String patron = "El valor del indice 1 en la lista es %d";
 		System.out.println(String.format(patron, valorElemento));
-		}catch(IndexOutOfBoundsException e) {
-			System.out.println(e.getMessage());
-			
-		}
+//		}catch(IndexOutOfBoundsException e) {
+//			System.out.println(e.getMessage());
+//			
+//		}
 	}
 	
 	public void testSwitch(int valor) {

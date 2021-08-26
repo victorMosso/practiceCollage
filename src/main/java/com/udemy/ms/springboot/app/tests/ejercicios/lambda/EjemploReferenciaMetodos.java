@@ -24,9 +24,7 @@ public class EjemploReferenciaMetodos {
 		System.out.println("La cadena en mayusculas es: "+mayusculas.get());
 //		Implementaremos la interfaz funcional Function<T,R>
 		Function<Float, String> valorCadenatoBoolean = String::valueOf;
-		System.out.println("Valor cadena del foat 2.3: "+valorCadenatoBoolean.apply(2.3F));
-		System.out.println("Equals");
-		
+		System.out.println("Valor cadena del float 2.3: "+valorCadenatoBoolean.apply(2.3F));
 	}
 	
 	

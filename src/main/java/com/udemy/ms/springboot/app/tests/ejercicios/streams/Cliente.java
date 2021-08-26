@@ -6,6 +6,10 @@ public class Cliente {
 	private String pais;
 	private int edad;
 	
+	public Cliente() {
+		
+	}
+	
 	public Cliente(String nombre, String apellido, String pais, int edad) {
 		super();
 		this.nombre = nombre;

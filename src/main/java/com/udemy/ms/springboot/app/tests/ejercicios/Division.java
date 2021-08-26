@@ -12,7 +12,6 @@ public class Division {
 			System.out.println(resp);
 		}
 		}catch(Exception e) {			
-			System.out.println("Exception e");
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}

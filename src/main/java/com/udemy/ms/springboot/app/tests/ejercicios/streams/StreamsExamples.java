@@ -1,6 +1,7 @@
 package com.udemy.ms.springboot.app.tests.ejercicios.streams;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.OptionalLong;
 import java.util.stream.Collectors;
@@ -19,7 +20,8 @@ public class StreamsExamples {
 		        .forEach(c -> log.info(c.toString()));
 		log.info("Stream Original");		
 		lista.stream()
-		.sorted((c1,c2) -> c1.getNombre().compareTo(c2.getNombre()))
+//		.sorted((c1,c2) -> c1.getNombre().compareTo(c2.getNombre()))
+		.sorted(Comparator.comparing(Cliente::getNombre))
 		.forEach(System.out::println);		
 	}	
 	
